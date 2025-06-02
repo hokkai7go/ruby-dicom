@@ -12,12 +12,13 @@ on:
     branches: [ "ruby-verup" ]
   pull_request:
     branches: [ "ruby-verup" ]
-
+  workflow_dispatch:
+    inputs:
+      bundler:
+        description: ''
+        default: 'none'
 permissions:
   contents: read
-
-inputs:
-  bundler: 'none'
 
 jobs:
   test:
