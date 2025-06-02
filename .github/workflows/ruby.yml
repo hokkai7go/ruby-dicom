@@ -16,6 +16,9 @@ on:
 permissions:
   contents: read
 
+inputs:
+  bundler: 'none'
+
 jobs:
   test:
 
